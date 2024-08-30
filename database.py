@@ -3,9 +3,9 @@ from sqlalchemy.orm import sessionmaker
 from models import Base
 import os
 
-SQLALCHEMY_DATABASE_URL = os.getenv("DATABASE_URL")
+# Substitua pela URL apropriada
+SQLALCHEMY_DATABASE_URL = "postgresql://bdapp_n8co_user:0MwMppnz7IwL7QtMUD5mj4ov01oKyrDV@dpg-cr8uooi3esus73bdjiig-a.oregon-postgres.render.com/bdapp_n8co"
 
-# Remova o `connect_args` porque não é necessário para bancos de dados como PostgreSQL ou MySQL
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
