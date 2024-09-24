@@ -40,7 +40,6 @@ Para instalar as dependências necessárias, execute:
 ```bash
 pip install -r requirements.txt
 ```
---
 ## Como Rodar o Projeto
 
 - Certifique-se de ter o Python instalado.
