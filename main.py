@@ -122,7 +122,7 @@ async def upload_book(
 
     db.add(db_book)
     db.commit()
-    db.refresh(db_book)  # Atualiza o db_book para incluir o ID gerado
+    db.refresh(db_book)  
 
     # Salva o arquivo PDF
     file_location = os.path.join(UPLOAD_DIRECTORY, f"{db_book.id}.pdf")
