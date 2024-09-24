@@ -1,6 +1,8 @@
 # Biblioteca API
 
-Uma API RESTful desenvolvida com **FastAPI** para gerenciar livros e categorias. A API permite o upload de arquivos PDF de livros, gerenciamento de categorias e atualização de capas dos livros. É ideal para sistemas de bibliotecas digitais ou outros cenários que exijam organização e gestão de livros em formato digital.
+Uma API RESTful desenvolvida com **FastAPI** para gerenciar livros e categorias.
+A API permite o upload de arquivos PDF de livros, gerenciamento de categorias e atualização de capas dos livros.
+É ideal para sistemas de bibliotecas digitais ou outros cenários que exijam organização e gestão de livros em formato digital.
 
 ## Funcionalidades
 
