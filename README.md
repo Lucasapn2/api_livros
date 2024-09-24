@@ -60,18 +60,145 @@ pip install -r requirements.txt
 
 ### Categorias
 
-GET /categories/: Lista todas as categorias cadastradas.
-POST /categories/: Cria uma nova categoria. Requer um formulário com o campo name da categoria, exemplo: (Livros Romance).
-
+- GET /categories/
+- Descrição: Lista todas as categorias cadastradas
+- Resposta: Um array de objetos JSON contendo o id e o name de cada categoria.
+- Exemplo de Resposta:  
+```  
+[
+  {
+    "id": 1,
+    "name": "Ficção Científica"
+  },
+  {
+    "id": 2,
+    "name": "Romance"
+  }
+]
+```
+## POST /categories/
+- Descrição: Cria uma nova categoria.
+- Requer: Um campo name no corpo da requisição contendo o nome da nova categoria.
+### Exemplo de Requisição:
+```
+{
+  "name": "Aventura"
+}
+```
+```
+- Exemplo de Resposta:
+  {
+  "id": 3,
+  "name": "Aventura"
+}
+```
 ### Livros
-- GET /books/: Lista todos os livros cadastrados.
-- GET /categories/{category_id}/books: Lista livros por categoria.
+- GET /books/:
+- Descrição: Lista todos os livros cadastrados.
+- Resposta: Um array de objetos JSON contendo detalhes sobre cada livro, como id, title, description, category_id e file_url.
+- Exemplo de Resposta:
+ ``` 
+ [
+  {
+    "id": 1,
+    "title": "O Guia do Mochileiro das Galáxias",
+    "description": "Uma obra-prima da ficção científica humorística.",
+    "category_id": 1,
+    "file_url": "http://localhost:8000/books/1/download"
+  },
+  {
+    "id": 2,
+    "title": "Orgulho e Preconceito",
+    "description": "Um romance clássico de Jane Austen.",
+    "category_id": 2,
+    "file_url": "http://localhost:8000/books/2/download"
+  }
+]
+```
+- GET /categories/{category_id}/books:
+- Descrição: Lista todos os livros pertencentes a uma categoria específica.
+- Parâmetro: category_id - O ID da categoria.
+- Exemplo de Resposta:
+```
+[
+  {
+    "id": 1,
+    "title": "O Guia do Mochileiro das Galáxias",
+    "description": "Uma obra-prima da ficção científica humorística.",
+    "category_id": 1,
+    "file_url": "http://localhost:8000/books/1/download"
+  }
+]
+```
+
 - GET /books/{book_id}: Faz o download do livro no formato PDF.
-- GET /books/{book_id}/info: Retorna informações detalhadas sobre um livro específico.
-- POST /upload/: Faz o upload de um novo livro em formato PDF. Requer um arquivo file, título title, descrição description e uma categoria opcional category_id.
-- PUT /books/{book_id}/update-cover/: Atualiza a capa de um livro. Requer um arquivo file com a nova imagem da capa.
-- PUT /books/{book_id}: Atualiza as informações de um livro, como título, descrição e capa.
-- DELETE /books/{book_id}: Remove um livro, excluindo também seu arquivo PDF e capa.
+- GET /books/{book_id}/info:
+- Descrição: Retorna detalhes completos de um livro específico.
+- Parâmetro: book_id - O ID do livro.
+- Exemplo de Resposta:
+```  
+{
+  "id": 1,
+  "title": "O Guia do Mochileiro das Galáxias",
+  "description": "Uma obra-prima da ficção científica humorística.",
+  "category_id": 1,
+  "file_url": "http://localhost:8000/books/1/download",
+  "cover_url": "http://localhost:8000/covers/1.jpg"
+}
+```
+- POST /upload/:
+- Descrição: Faz o upload de um novo livro em formato PDF.
+- Requer:
+  - file: Arquivo PDF do livro.
+  - title: Título do livro.
+  - description: Descrição do livro.
+  - category_id (opcional): O ID da categoria associada.
+- Exemplo de Requisição (usando curl):
+```
+curl -X 'POST' \
+'http://127.0.0.1:8000/upload/' \
+-F 'file=@/caminho/do/arquivo/livro.pdf' \
+-F 'title=Título do Livro' \
+-F 'description=Descrição do Livro' \
+-F 'category_id=1'
+```
+- PUT /books/{book_id}/update-cover/:
+- Descrição: Atualiza a capa de um livro.
+- Parâmetro: book_id - O ID do livro.
+- Requer:
+  - file: Arquivo de imagem da nova capa.
+
+- Exemplo de Requisição:
+```
+curl -X 'PUT' \
+'http://127.0.0.1:8000/books/1/update-cover/' \
+-F 'file=@/caminho/da/capa.jpg'
+```
+- PUT /books/{book_id}:
+- Descrição: Atualiza as informações de um livro.
+- Parâmetro: book_id - O ID do livro.
+Requer:
+  - title: Título do livro.
+  - description: Descrição do livro.
+  - category_id (opcional): ID da nova categoria.
+  
+- Exemplo de Requisição:
+```
+{
+  "title": "O Guia do Mochileiro das Galáxias - Edição Revisada",
+  "description": "Versão atualizada do clássico.",
+  "category_id": 1
+}
+```
+
+- DELETE /books/{book_id}:
+- Descrição: Remove um livro, excluindo também o arquivo PDF e a capa.
+- Parâmetro: book_id - O ID do livro.
+- Exemplo de Requisição (usando curl):
+```  
+curl -X 'DELETE' \
+'http://127.0.0.1:8000/books/1'
+```
 
 ## Estrutura do Projeto
 
