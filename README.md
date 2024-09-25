@@ -40,7 +40,9 @@ Para instalar as dependências necessárias, execute:
 ```bash
 pip install -r requirements.txt
 ```
-## Como Rodar o Projeto ![Run](https://img.shields.io/badge/Run-Project-blue
+## Como Rodar o Projeto 
+
+![Run](https://img.shields.io/badge/Run-Project-blue)
 
 - Certifique-se de ter o Python instalado.
 - Clone este repositório.
