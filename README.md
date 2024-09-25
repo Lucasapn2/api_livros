@@ -201,7 +201,6 @@ curl -X 'DELETE' \
 ```
 
 ## Estrutura do Projeto
-```
 📁 <span style="color:blue">BibliotecaAPI/</span>
 │
 ├── 📁 <span style="color:green">books/</span>              # Diretório onde os arquivos PDF dos livros são armazenados
@@ -213,7 +212,6 @@ curl -X 'DELETE' \
 ├── 📄 <span style="color:orange">README.md</span>           # Documentação do projeto (este arquivo)
 └── 📄 <span style="color:orange">requirements.txt</span>    # Arquivo contendo as dependências necessárias para rodar o projeto
 
-```
 
 
 
