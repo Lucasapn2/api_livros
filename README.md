@@ -202,7 +202,7 @@ curl -X 'DELETE' \
 
 ## Estrutura do Projeto
 
-📁 BibliotecaAPI/ ![API](https://img.shields.io/badge/API-FastAPI-blue)
+📁 BibliotecaAPI/
 ```
 │
 ├── 📁 books/ # Diretório onde os arquivos PDF dos livros são armazenados
