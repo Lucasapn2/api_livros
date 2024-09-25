@@ -220,7 +220,7 @@ curl -X 'DELETE' \
 - O projeto utiliza SQLite para armazenamento local dos dados dos livros e categorias. A base de dados é inicializada automaticamente ao rodar a aplicação.
 
 ## Exemplos de Uso
---
+
 ### Upload de Livro
 
 - Envie uma requisição POST para o endpoint /upload/ com os seguintes dados:
@@ -230,7 +230,7 @@ curl -X 'DELETE' \
 - description: Descrição do livro.
 - category_id: (Opcional) ID da categoria associada.
 - Exemplo de curl
-- 1.
+
 ``` curl -X 'POST' \
   'http://127.0.0.1:8000/upload/' \
   -F 'file=@/caminho/do/arquivo/livro.pdf' \
