@@ -247,7 +247,11 @@ Exemplo:
 ```
 ## 3. Excluir um Livro
 - Para excluir um livro, envie uma requisição DELETE para /books/{book_id}.
- ```curl -X 'DELETE' 'http://127.0.0.1:8000/books/1'  ```
+
+```
+curl -X 'DELETE' 'http://127.0.0.1:8000/books/1'
+
+```
 
 ## Boas Práticas
 - Verifique o tipo de arquivo ao fazer upload de livros (somente PDFs são permitidos).
