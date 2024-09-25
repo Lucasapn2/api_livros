@@ -201,8 +201,9 @@ curl -X 'DELETE' \
 ```
 
 ## Estrutura do Projeto
-📁 BibliotecaAPI/ ![API](https://img.shields.io/badge/API-FastAPI-blue)
 
+📁 BibliotecaAPI/ ![API](https://img.shields.io/badge/API-FastAPI-blue)
+```
 │
 ├── 📁 books/ # Diretório onde os arquivos PDF dos livros são armazenados
 ├── 📁 covers/ # Diretório onde as capas dos livros são armazenadas
@@ -213,6 +214,7 @@ curl -X 'DELETE' \
 ├── 📄 README.md # Documentação do projeto (este arquivo)
 └── 📄 requirements.txt # Arquivo contendo as dependências necessárias para rodar o projeto
 
+```
 
 
 
