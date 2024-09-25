@@ -4,8 +4,8 @@
 Uma API RESTful desenvolvida com **FastAPI** para gerenciar livros e categorias.  
 A API permite o upload de arquivos PDF de livros, criação e gerenciamento de categorias, e atualização de capas dos livros.  
 É ideal para sistemas de bibliotecas digitais ou outros cenários que exijam organização e gestão de livros em formato digital.
-Acesse a documentação da API através do seguinte link: [Documentação da API](https://api-booksapp.onrender.com/docs).
 
+Acesse a documentação da API através do seguinte link: [Documentação da API](https://api-booksapp.onrender.com/docs).
 ## Funcionalidades ![Features](https://img.shields.io/badge/Features-Implemented-brightgreen)
 
 - **Gerenciamento de Categorias**:
