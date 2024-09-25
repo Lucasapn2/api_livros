@@ -1,10 +1,10 @@
-# Biblioteca API
+# Biblioteca API ![FastAPI](https://img.shields.io/badge/FastAPI-Framework-green) ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 
-Uma API RESTful desenvolvida com **FastAPI** para gerenciar livros e categorias.
-A API permite o upload de arquivos PDF de livros, criação é gerenciamento de categorias, atualização de capas dos livros.
+Uma API RESTful desenvolvida com **FastAPI** para gerenciar livros e categorias.  
+A API permite o upload de arquivos PDF de livros, criação e gerenciamento de categorias, e atualização de capas dos livros.  
 É ideal para sistemas de bibliotecas digitais ou outros cenários que exijam organização e gestão de livros em formato digital.
 
-## Funcionalidades
+## Funcionalidades ![Features](https://img.shields.io/badge/Features-Implemented-brightgreen)
 
 - **Gerenciamento de Categorias**:
   - Listar todas as categorias.
@@ -19,21 +19,21 @@ A API permite o upload de arquivos PDF de livros, criação é gerenciamento de 
   - Atualização de informações dos livros (título, descrição e capa).
   - Remover livros, incluindo o arquivo PDF e a capa.
 
-## Tecnologias Utilizadas
+## Tecnologias Utilizadas ![Technologies](https://img.shields.io/badge/Technologies-Utilized-orange)
 
 - **FastAPI**: Framework web para construção de APIs.
 - **SQLAlchemy**: ORM utilizado para interação com o banco de dados.
 - **SQLite**: Banco de dados leve utilizado para armazenar categorias e livros.
 - **Logging**: Implementado para monitoramento e registro de atividades do sistema.
 
-## Requisitos
+## Requisitos ![Requirements](https://img.shields.io/badge/Requirements-Python%203.9+-blue)
 
 - Python 3.9+
 - FastAPI
 - SQLAlchemy
 - Uvicorn (para executar o servidor)
 
-### Instalação de Dependências
+### Instalação de Dependências ![Install](https://img.shields.io/badge/Install-Dependencies-yellow)
 
 Para instalar as dependências necessárias, execute:
 
