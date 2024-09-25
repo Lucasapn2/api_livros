@@ -207,15 +207,11 @@ curl -X 'DELETE' \
 ├── 📁 books/              # Diretório onde os arquivos PDF dos livros são armazenados
 ├── 📁 covers/             # Diretório onde as capas dos livros são armazenadas
 │
-├── 📄 main.py             # Código principal da aplicação FastAPI
-├── 📄 models.py           # Definições dos modelos de dados (Livros e Categorias)
-├── 📄 database.py         # Inicialização do banco de dados SQLite e configuração do SQLAlchemy
-├── 📄 README.md           # Documentação do projeto
-└── 📄 requirements.txt    # Dependências do projeto
-
-## Como Executar
-
-
+├── 📄 main.py             # Código principal da aplicação FastAPI, contendo as rotas e lógica principal
+├── 📄 models.py           # Definições dos modelos de dados (Livros e Categorias) com SQLAlchemy
+├── 📄 database.py         # Configuração e inicialização do banco de dados SQLite usando SQLAlchemy
+├── 📄 README.md           # Documentação do projeto (este arquivo)
+└── 📄 requirements.txt    # Arquivo contendo as dependências necessárias para rodar o projeto
 
 
 ## Banco de Dados 
