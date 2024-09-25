@@ -215,10 +215,11 @@ curl -X 'DELETE' \
 
 
 
+
 ## Banco de Dados 
 - O projeto utiliza SQLite para armazenamento local dos dados dos livros e categorias. A base de dados é inicializada automaticamente ao rodar a aplicação.
 
-##Exemplos de Uso
+## Exemplos de Uso
 --
 ### Upload de Livro
 
