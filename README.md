@@ -52,7 +52,7 @@ pip install -r requirements.txt
 - O servidor estará disponível em http://127.0.0.1:8000.
   
 ### Clone este repositório:
-- git clone https://github.com/seu-usuario/biblioteca-api.git
+- git clone https://github.com/Lucasapn2/api_livros.git
 
 ## Endpoints Principais
 
