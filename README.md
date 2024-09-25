@@ -201,7 +201,6 @@ curl -X 'DELETE' \
 ```
 
 ## Estrutura do Projeto
-```
 📁 BibliotecaAPI/ ![API](https://img.shields.io/badge/API-FastAPI-blue)
 
 │
@@ -213,7 +212,6 @@ curl -X 'DELETE' \
 ├── 📄 database.py # Configuração e inicialização do banco de dados SQLite usando SQLAlchemy
 ├── 📄 README.md # Documentação do projeto (este arquivo)
 └── 📄 requirements.txt # Arquivo contendo as dependências necessárias para rodar o projeto
-```
 
 
 
