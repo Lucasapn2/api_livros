@@ -201,16 +201,18 @@ curl -X 'DELETE' \
 ```
 
 ## Estrutura do Projeto
-📁 <span style="color:blue">BibliotecaAPI/</span>
+```
+📁 BibliotecaAPI/
 │
-├── 📁 <span style="color:green">books/</span>              # Diretório onde os arquivos PDF dos livros são armazenados
-├── 📁 <span style="color:green">covers/</span>             # Diretório onde as capas dos livros são armazenadas
+├── 📁 books/ # Diretório onde os arquivos PDF dos livros são armazenados
+├── 📁 covers/ # Diretório onde as capas dos livros são armazenadas
 │
-├── 📄 <span style="color:orange">main.py</span>             # Código principal da aplicação FastAPI, contendo as rotas e lógica principal
-├── 📄 <span style="color:orange">models.py</span>           # Definições dos modelos de dados (Livros e Categorias) com SQLAlchemy
-├── 📄 <span style="color:orange">database.py</span>         # Configuração e inicialização do banco de dados SQLite usando SQLAlchemy
-├── 📄 <span style="color:orange">README.md</span>           # Documentação do projeto (este arquivo)
-└── 📄 <span style="color:orange">requirements.txt</span>    # Arquivo contendo as dependências necessárias para rodar o projeto
+├── 📄 main.py # Código principal da aplicação FastAPI, contendo as rotas e lógica principal
+├── 📄 models.py # Definições dos modelos de dados (Livros e Categorias) com SQLAlchemy
+├── 📄 database.py # Configuração e inicialização do banco de dados SQLite usando SQLAlchemy
+├── 📄 README.md # Documentação do projeto (este arquivo)
+└── 📄 requirements.txt # Arquivo contendo as dependências necessárias para rodar o projeto
+```
 
 
 
